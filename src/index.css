@@ -1,0 +1,30 @@
+:root {
+  --detailed-color: #7b13f3;
+}
+
+body {
+  background-color: #181a1b;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--detailed-color);
+}
+
+.line {
+  color: var(--detailed-color);
+  display: inline-block;
+  text-align: center;
+}
+
+.line::after {
+  content: "";
+  height: 4px;
+  width: 100%;
+  display: block;
+  background-color: var(--detailed-color);
+  margin-top: -1px;
+  border-radius: 100%;
+}
